@@ -1,26 +1,26 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'ATRotisSemiSans';
+  src: url('/blackwell-prototype/public/fonts/ATRotisSemiSans-Light.ttf')
+    format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'ATRotisSemiSans';
+  src: url('/blackwell-prototype/public/fonts/ATRotisSemiSans-ExtraBold.ttf')
+    format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #3a53ba;
+  color: #171717;
+  font-family: 'ATRotisSemiSans', sans-serif;
+  /* font-family: 'ATRotisSemiSans', sans-serif; */
 }
