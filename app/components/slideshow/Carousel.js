@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { useState } from 'react';
+import RegisterNow from '../buttons/RegisterNow';
 
 export default function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -8,27 +9,27 @@ export default function Carousel() {
     {
       name: 'step-1',
       src: '/images/register/step-1.png',
-      text: 'Download the Blackwell Invest app',
+      text: 'Install our app, “Blackwell Invest”',
     },
     {
       name: 'step-2',
       src: '/images/register/step-2.png',
-      text: 'Login to your account',
+      text: 'Login OR create a new account',
     },
     {
       name: 'step-3',
       src: '/images/register/step-3.png',
-      text: 'Click on the "Account" icon to navigate to the Account page',
+      text: 'Click “Account”',
     },
     {
       name: 'step-4',
       src: '/images/register/step-4.png',
-      text: 'Link an account to the Blackwell Invest app',
+      text: 'Click “Link an account”',
     },
     {
       name: 'step-5',
       src: '/images/register/step-5.png',
-      text: 'Select "BlackwellGlobalAsia-Live" server',
+      text: 'Select “BlackwellGlobalAsia-Live” server',
     },
     {
       name: 'step-6',
@@ -78,12 +79,14 @@ export default function Carousel() {
   const visibleSlides = getVisibleSlides();
 
   return (
-    <div className="w-full max-w-6xl h-[90vh] mx-auto p-8 flex flex-col items-center my-5 ">
-      <h1 className="text-4xl text-cyan-300 font-bold mb-12 text-center">
-        How to Link MT4 Account
-      </h1>
+    <div className="w-full max-w-6xl  mx-auto p-8 flex flex-col items-center my-5 mb-10">
+      <div>
+        <h1 className="text-4xl font-bold mt-10 mb-5 text-center text-[#01f2f2]">
+          How to Link MT4 Account
+        </h1>
+      </div>
 
-      <div className="relative w-full flex items-center justify-center mb-8">
+      <div className="relative w-full flex items-center justify-center mb-2">
         <button
           className="absolute left-2 top-1/2 -translate-y-1/2  rounded-full w-10 h-10 flex justify-center items-center cursor-pointer z-10 shadow-md"
           onClick={prevSlide}
@@ -102,7 +105,7 @@ export default function Carousel() {
               key={slide.name}
               className="flex flex-col items-center justify-start flex-1  relative"
             >
-              <div className="flex flex-col rounded-2xl pt-10 px-8 pb-2 w-[330px] h-[420px] justify-start border border-orange-500  ">
+              <div className="flex flex-col rounded-2xl pt-10 px-8 pb-2 w-[330px] h-[420px] justify-start border border-[#F37406]  ">
                 <Image
                   src={slide.src}
                   alt={slide.name}
@@ -143,11 +146,7 @@ export default function Carousel() {
         </button>
       </div>
 
-      <div className="flex justify-center mt-4">
-        <button className="bg-orange-500 text-white font-thin tracking-wider border-none rounded px-4 py-2 text-md cursor-pointer transition-colors hover:bg-orange-600">
-          Register Now
-        </button>
-      </div>
+      <RegisterNow />
     </div>
   );
 }

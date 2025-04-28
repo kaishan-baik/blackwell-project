@@ -1,11 +1,12 @@
 import Image from 'next/image';
+import RegisterNow from '../buttons/RegisterNow';
 
 export default function Reasons() {
   const reasonsArray = [
     {
       name: 'Regulated',
       icon: '/images/choose/icon-1.png',
-      desc: 'The copy trading platform is regulated. Our technology partner is regulated. And so are we, as a brokerage. We operate under strict compliance for your peace of mind.',
+      desc: 'The copy trading platform is regulated. Our technology partner is regulated. And so are we, as a brokerage. We operate under strict compliance because your trust and peace of mind are everything.',
     },
     {
       name: '0 Commissions',
@@ -25,18 +26,18 @@ export default function Reasons() {
   ];
 
   return (
-    <div className="relative w-full h-[100vh] py-20 overflow-hidden">
-      <div className="absolute inset-0 w-full h-full z-0 -top-10">
+    <div className="relative w-full mb-20 ">
+      <div className="absolute inset-0 w-full h-full z-0 ">
         <Image
           src="/images/bg-2.png"
           alt="background-image1"
           fill
           priority
-          className="object-cover -translate-y-[50px] "
+          className="object-cover -translate-y-[120px] "
         />
       </div>
-      <div className="container mx-auto relative z-10 mt-10 translate-y-[150px]">
-        <h2 className="text-4xl font-bold text-center mb-12 text-cyan-300">
+      <div className="container mx-auto relative z-10 mt-10 translate-y-[150px] mb-10">
+        <h2 className="text-4xl font-bold text-center mb-12 text-[#01f2f2]">
           Why Choose Us?
         </h2>
 
@@ -59,11 +60,7 @@ export default function Reasons() {
           ))}
         </div>
 
-        <div className="flex justify-center mt-4">
-          <button className="bg-orange-500 text-white font-thin tracking-wider border-none rounded px-4 py-2 text-md cursor-pointer transition-colors hover:bg-orange-600">
-            Register Now
-          </button>
-        </div>
+        <RegisterNow />
       </div>
     </div>
   );

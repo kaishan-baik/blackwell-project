@@ -5,6 +5,7 @@ import Landing from './components/landing/Landing';
 import TradeSteps from './components/trade-steps/TradeSteps';
 import Carousel from './components/slideshow/Carousel';
 import Reasons from './components/reasons/Reasons';
+import Navigate from './components/navigation/Navigate';
 
 export default function Home() {
   return (
@@ -12,9 +13,19 @@ export default function Home() {
       <Landing />
       <Matching />
       <Analysis />
+      <div className="flex w-full h-full z-0 translate-y-3 relative">
+        <Image
+          src="/images/bg-1.png"
+          alt="background-image1"
+          fill
+          priority
+          className="object-cover"
+        />
+      </div>
       <TradeSteps />
       <Carousel />
       <Reasons />
+      <Navigate />
     </div>
   );
 }

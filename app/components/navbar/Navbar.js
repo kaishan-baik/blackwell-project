@@ -5,7 +5,7 @@ import Login from './Login';
 export default function Navbar() {
   return (
     <nav
-      className="w-full h-20  text-white flex items-center justify-between px-8 md:px-12 font-thin font-stretch-condensed pt-2"
+      className="w-full h-20  text-white flex items-center justify-between px-8 md:px-12 font-thin font-stretch-condensed pt-2 fixed z-100"
       style={{ backgroundColor: '#112A4D' }}
     >
       <div className="flex items-center">

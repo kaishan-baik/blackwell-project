@@ -2,14 +2,16 @@ import Image from 'next/image';
 
 export default function Analysis() {
   return (
-    <div className="flex flex-col w-[70%] justify-center items-center text-white my-10">
-      <h1 className="text-5xl font-bold mt-10 mb-5 text-center text-cyan-400">
-        Easy Analysis
-      </h1>
-      <p className="text-[#f2df79] my-2 font-semibold mx-auto tracking-wider text-center mb-2">
-        Instant clarity on the Master's profile. Get a snapshot of their trade
-        history, profitability, risk, and portfolio all in one place.
-      </p>
+    <div className="flex flex-col w-[70%] justify-center items-center text-white my-10 mb-20">
+      <div>
+        <h1 className="text-5xl font-bold mt-10 mb-5 text-center text-[#01f2f2]">
+          Easy Analysis
+        </h1>
+        <p className="text-[#f2df79] my-2 font-semibold mx-auto tracking-wider text-center mb-2">
+          Instant clarity on the Masters’ profile. Get a snapshot of their trade
+          history, profitability, risk, and portfolio all in one place.
+        </p>
+      </div>
       {/* image container */}
       <div className="relative w-full max-w-4xl mx-auto h-[400px] md:h-[500px] flex justify-center items-center my-6 ">
         {/* background image */}
@@ -56,7 +58,7 @@ export default function Analysis() {
           </div>
 
           {/* Bottom left card */}
-          <div className="absolute -bottom-[5%] left-[22%] transform w-[300px] md:w-[250px]">
+          <div className="absolute -bottom-[5%] left-[22%] transform w-[0%] md:w-[250px]">
             <Image
               src="/images/analysis/function-5.png"
               alt="Function 5"
