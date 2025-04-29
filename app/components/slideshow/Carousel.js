@@ -79,11 +79,13 @@ export default function Carousel() {
   const visibleSlides = getVisibleSlides();
 
   return (
-    <div className="w-full max-w-6xl  mx-auto p-8 flex flex-col items-center my-5 mb-10">
-      <div>
-        <h1 className="text-4xl font-bold mt-10 mb-5 text-center text-[#01f2f2]">
-          How to Link MT4 Account
-        </h1>
+    <div className="w-full max-w-6xl  mx-auto p-8 flex flex-col items-center  mb-10">
+      <div className="container mx-auto relative flex items-center justify-center z-10 my-20 translate-y-10 ">
+        <div className="max-w-3xl">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-10 mb-5 text-center text-[#01f2f2]">
+            How to Link MT4 Account
+          </h1>
+        </div>
       </div>
 
       <div className="relative w-full flex items-center justify-center mb-2">

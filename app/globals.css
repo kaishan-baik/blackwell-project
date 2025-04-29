@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-@font-face {
+/* @font-face {
   font-family: 'ATRotisSemiSans';
   src: url('/blackwell-prototype/public/fonts/ATRotisSemiSans-Light.ttf')
     format('truetype');
@@ -16,11 +16,11 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 body {
   background-color: #3a53ba;
   color: #171717;
-  font-family: 'ATRotisSemiSans', sans-serif;
+  /* font-family: 'ATRotisSemiSans', sans-serif; */
   /* font-family: 'ATRotisSemiSans', sans-serif; */
 }

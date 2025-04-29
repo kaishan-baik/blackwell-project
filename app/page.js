@@ -6,6 +6,7 @@ import TradeSteps from './components/trade-steps/TradeSteps';
 import Carousel from './components/slideshow/Carousel';
 import Reasons from './components/reasons/Reasons';
 import Navigate from './components/navigation/Navigate';
+import Contact from './components/contact/Contact';
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Carousel />
       <Reasons />
       <Navigate />
+      <Contact />
     </div>
   );
 }

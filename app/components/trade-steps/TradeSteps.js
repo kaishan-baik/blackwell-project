@@ -42,10 +42,13 @@ export default function TradeSteps() {
       {/* title */}
       <div className=" my-10">
         <div className="container mx-auto relative flex items-center justify-center z-10 my-20 translate-y-10 ">
-          <h1 className="text-4xl font-bold mt-10  text-center text-[#01f2f2]">
-            Trade Like a Pro in Minutes
-          </h1>
+          <div className="max-w-3xl">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-10 mb-5 text-center text-[#01f2f2]">
+              Trade Like a Pro in Minutes
+            </h1>
+          </div>
         </div>
+
         <div className="flex flex-col md:flex-row  mx-auto max-w-6xl gap-0">
           {/* Left side - Tabs */}
           <div className="flex flex-col w-full md:w-1/2 gap-4">

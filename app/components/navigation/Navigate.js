@@ -50,8 +50,8 @@ export default function Navigate() {
   ];
   return (
     <div className="flex flex-col  ">
-      <div>
-        <h1 className="text-4xl font-bold mt-10 mb-5 text-center text-[#01f2f2]">
+      <div className="max-w-3xl text-wrap px-auto">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-10 mb-5 text-center text-[#01f2f2]  ">
           Navigate Our App in 5 Clicks
         </h1>
       </div>
@@ -63,7 +63,7 @@ export default function Navigate() {
             {navArr.map((item) => (
               <div className="flex bg-white rounded-l-xl rounded-b-none rounded-r-xl rounded-t-xl overflow-hidden">
                 <button
-                  key={item.id}
+                  key={item.id + item.title}
                   onClick={() => setActiveTab(item.id)}
                   className={`flex items-center justify-center  cursor-pointer ${
                     activeTab === item.id
@@ -120,7 +120,6 @@ export default function Navigate() {
           ))}
         </div>
       </div>
-
       <Downloads />
     </div>
   );
